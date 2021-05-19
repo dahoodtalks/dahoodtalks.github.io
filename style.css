@@ -5,6 +5,10 @@
 }
 
 /* GENERAL */
+#ulogo {
+    padding: 20px;
+}
+
 .darkB {
     display: none;
     position: fixed;
