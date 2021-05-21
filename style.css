@@ -353,6 +353,7 @@ iframe {
 @media only screen and (max-width: 1680px) {
 
     .latestPodcasts {
+        display: flex;
         margin: auto;
     }
 
@@ -381,6 +382,10 @@ iframe {
 
 @media only screen and (max-width: 1386px) {
 
+    .latestPodcasts {
+        display: block;
+        margin: auto;
+    }
 
     /* Merch Section */
     .merchGrid {
