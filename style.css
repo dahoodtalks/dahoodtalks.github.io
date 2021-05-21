@@ -352,9 +352,8 @@ iframe {
 
 @media only screen and (max-width: 1680px) {
 
-    .latestPodcasts {
+    .podvids {
         display: flex;
-        margin: auto;
     }
 
     .lp1 {
@@ -382,9 +381,8 @@ iframe {
 
 @media only screen and (max-width: 1386px) {
 
-    .latestPodcasts {
+    .podvids {
         display: block;
-        margin: auto;
     }
 
     /* Merch Section */
