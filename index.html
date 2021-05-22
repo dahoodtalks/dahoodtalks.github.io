@@ -340,13 +340,13 @@
       let link2 = orderB.getAttribute('onclick')
 
       link = link.toString().substring(
-        str.firstIndexOf("'") + 1, 
-        str.lastIndexOf("'")
+        link.firstIndexOf("'") + 1, 
+        link.lastIndexOf("'")
       );
 
       link2 = link2.toString().substring(
-        str.firstIndexOf("'") + 1, 
-        str.lastIndexOf("'")
+        link2.firstIndexOf("'") + 1, 
+        link2.lastIndexOf("'")
       );
 
       PopUps[0].setAttribute('onclick', popTabLink(link))
