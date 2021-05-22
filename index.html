@@ -331,16 +331,16 @@
       DarkB.classList.remove("disp")
     }
 
-    function popTabLink(link) {
-      window.open(link, '_blank');
-    }
-
     if (screen.width < 700) {
       const link = 'https://forms.gle/qHrUrot5rtRMD6WQ6'
       const link2 = 'https://forms.gle/i8HyqA5RSZFqnS7U8'
 
       feedB.setAttribute('onclick', 'popTabLink(link)')
       orderB.setAttribute('onclick', 'popTabLink(link2)')
+    }
+
+    function popTabLink(link) {
+      window.open(link, '_blank');
     }
   </script>
 </body>
