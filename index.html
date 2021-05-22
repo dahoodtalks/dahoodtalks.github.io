@@ -339,15 +339,9 @@
       let link = feedB.getAttribute('onclick')
       let link2 = orderB.getAttribute('onclick')
 
-      link = link.toString().substring(
-        link.firstIndexOf("'") + 1, 
-        link.lastIndexOf("'")
-      );
+      link = 'https://forms.gle/qHrUrot5rtRMD6WQ6'
 
-      link2 = link2.toString().substring(
-        link2.firstIndexOf("'") + 1, 
-        link2.lastIndexOf("'")
-      );
+      link2 = 'https://forms.gle/i8HyqA5RSZFqnS7U8'
 
       PopUps[0].setAttribute('onclick', popTabLink(link))
       PopUps[1].setAttribute('onclick', popTabLink(link2))
