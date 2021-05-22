@@ -146,7 +146,7 @@
           <img src="./images/shirt7.jpeg" alt="">
         </div>
 
-        <button onclick="popup('https://forms.gle/qHrUrot5rtRMD6WQ6')" class="btn btn-primaryOrder">Order Now</button>
+        <button id="orderB" onclick="popup('https://forms.gle/qHrUrot5rtRMD6WQ6')" class="btn btn-primaryOrder">Order Now</button>
       </div>
 
     </div>
@@ -302,7 +302,8 @@
     const PopUps = document.getElementsByClassName("popUp")
     const popup1 = document.querySelector(".popup1")
     const iframe1 = document.querySelector(".iframe")
-
+    const orderB = document.querySelector("#orderB")
+    const feedB = document.querySelector("#popup1button")
 
     // Event Listeners
     DarkB.addEventListener("click", clearPopUPS)
@@ -335,8 +336,8 @@
     }
 
     if (screen.width < 700) {
-      let link = PopUps[0].getAttribute('onclick')
-      let link2 = PopUps[1].getAttribute('onclick')
+      let link = feedB.getAttribute('onclick')
+      let link2 = orderB.getAttribute('onclick')
 
       link = link.toString().substring(
         str.firstIndexOf("'") + 1, 
