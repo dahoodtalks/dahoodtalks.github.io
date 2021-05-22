@@ -195,6 +195,30 @@
       "https://www.youtube.com/feeds/videos.xml?channel_id=");
 
 
+    function popTabLink(link) {
+      window.open(link, '_blank');
+    }
+
+    if (screen.width < 700) {
+      let link = PopUps[0].getAttribute('onclick')
+      let link2 = PopUps[1].getAttribute('onclick')
+
+      link = link.toString().substring(
+        str.firstIndexOf("'") + 1, 
+        str.lastIndexOf("'")
+      );
+
+      link2 = link2.toString().substring(
+        str.firstIndexOf("'") + 1, 
+        str.lastIndexOf("'")
+      );
+
+      PopUps[0].setAttribute('onclick', popTabLink(link))
+      PopUps[1].setAttribute('onclick', popTabLink(link2))
+    }
+
+
+
     if (screen.width < 500) {
       const contain1 = document.querySelector('container')
       contain1.setAttribute('class', 'test1')
