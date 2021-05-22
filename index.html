@@ -336,15 +336,11 @@
     }
 
     if (screen.width < 700) {
-      let link = feedB.getAttribute('onclick')
-      let link2 = orderB.getAttribute('onclick')
+      const link = 'https://forms.gle/qHrUrot5rtRMD6WQ6'
+      const link2 = 'https://forms.gle/i8HyqA5RSZFqnS7U8'
 
-      link = 'https://forms.gle/qHrUrot5rtRMD6WQ6'
-
-      link2 = 'https://forms.gle/i8HyqA5RSZFqnS7U8'
-
-      feedB.setAttribute('onclick', popTabLink(link))
-      orderB.setAttribute('onclick', popTabLink(link2))
+      feedB.setAttribute('onclick', 'popTabLink(link)')
+      orderB.setAttribute('onclick', 'popTabLink(link2)')
     }
   </script>
 </body>
