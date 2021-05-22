@@ -332,11 +332,8 @@
     }
 
     if (screen.width < 700) {
-      const link = 'https://forms.gle/qHrUrot5rtRMD6WQ6'
-      const link2 = 'https://forms.gle/i8HyqA5RSZFqnS7U8'
-
-      feedB.setAttribute('onclick', 'popTabLink(link)')
-      orderB.setAttribute('onclick', 'popTabLink(link2)')
+      feedB.setAttribute('onclick', 'popTabLink("https://forms.gle/qHrUrot5rtRMD6WQ6")')
+      orderB.setAttribute('onclick', 'popTabLink("https://forms.gle/i8HyqA5RSZFqnS7U8")')
     }
 
     function popTabLink(link) {
